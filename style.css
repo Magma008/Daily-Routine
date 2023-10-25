@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.header {
+    padding: 20px 40px;
+    box-shadow: 0px 5px 10px rgb(208, 208, 208);
+}
+
+.logo {
+    font-size: 40px;
+    color: rgb(18, 78, 209);
+}
+
+.body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.new {
+    padding: 10px 80px;
+}
+
+.done {
+    padding: 10px 90px;
+}
+
+.text {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+}
+
+.write {
+    padding: 5px;
+    width: 100%;
+    transition: all .3s linear;
+    background: white;
+    outline: none;
+    border: 2px solid black;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.write:focus {
+    background: salmon;
+    color: rgb(0, 43, 135);
+    border: 2px solid powderblue;
+    box-shadow: 5px 5px 10px salmon;
+}
+
+.check {
+    width: 20px;
+}
+
+.lists li {
+    font-size: 20px;
+}
+
+.button {
+    background: transparent;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.icon {
+    fill: teal;
+    background: springgreen;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.none {
+    display: none;
+}
+
+.written {
+    padding: 5px;
+    width: 100%;
+    background: rgb(18, 78, 209);
+    outline: none;
+    border: 2px solid rgb(18, 78, 209);
+    font-size: 17px;
+    color: white;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.p-none {
+    pointer-events: none;
+}
+
+.disabled {
+    background: gray;
+    border: 2px solid gray;
+    color: darkorange;
+    accent-color: gray;
+}
+
+.margin {
+    margin: 15px 0;
+}
+
+
+@media screen and (max-width: 650px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .write {
+        font-size: 15px;
+    }
+
+    .written {
+        font-size: 15px;
+    }
+
+    .new {
+        padding: 8px 25px;
+    }
+    
+    .done {
+        padding: 8px 25px;
+    }
+
+    .none {
+        display: block;
+    }
+}
